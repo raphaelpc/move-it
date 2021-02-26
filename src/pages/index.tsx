@@ -52,9 +52,9 @@ export default function Home(props: HomeProps) {
 export const getServerSideProps: GetServerSideProps = async ctx => {
 
     const {
-        level = null,
-        currentExperience = null,
-        challengesCompleted = null,
+        level = 1,
+        currentExperience = 0,
+        challengesCompleted = 0,
     } = ctx.req.cookies;
 
     return {
